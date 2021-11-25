@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9dO-sv-WNI" customClass="LoginButtonsXibController" customModule="TMS_HW18" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ReS-bo-1HL">
+                    <rect key="frame" x="0.0" y="0.0" width="176" height="64"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faceid" translatesAutoresizingMaskIntoConstraints="NO" id="O23-8r-jiS">
+                            <rect key="frame" x="31" y="0.0" width="25" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="HTB-bq-6rr"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Face ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVs-f0-WR4">
+                            <rect key="frame" x="71" y="0.0" width="105" height="64"/>
+                            <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="KVs-f0-WR4" secondAttribute="bottom" id="46X-7L-8fX"/>
+                        <constraint firstAttribute="bottom" secondItem="O23-8r-jiS" secondAttribute="bottom" id="5fr-gP-6uU"/>
+                        <constraint firstItem="O23-8r-jiS" firstAttribute="top" secondItem="ReS-bo-1HL" secondAttribute="top" id="K8t-8W-LLN"/>
+                        <constraint firstAttribute="trailing" secondItem="KVs-f0-WR4" secondAttribute="trailing" id="S5Y-hQ-Pka"/>
+                        <constraint firstItem="KVs-f0-WR4" firstAttribute="top" secondItem="ReS-bo-1HL" secondAttribute="top" id="YQd-Ia-uxj"/>
+                        <constraint firstAttribute="width" constant="176" id="rvz-4N-DOS"/>
+                        <constraint firstItem="O23-8r-jiS" firstAttribute="leading" secondItem="ReS-bo-1HL" secondAttribute="leading" constant="31" id="x9e-i8-GF6"/>
+                        <constraint firstItem="KVs-f0-WR4" firstAttribute="leading" secondItem="O23-8r-jiS" secondAttribute="trailing" constant="15" id="xf2-0w-bcW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3N0-15-XTW">
+                    <rect key="frame" x="190" y="0.0" width="176" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9f-oc-saX">
+                            <rect key="frame" x="0.0" y="0.0" width="176" height="64"/>
+                            <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pv3-NW-smb">
+                            <rect key="frame" x="0.0" y="0.0" width="176" height="64"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title=""/>
+                            <connections>
+                                <action selector="actionLogin:" destination="9dO-sv-WNI" eventType="touchUpInside" id="VKf-Eu-4Gb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="labelColor"/>
+                    <constraints>
+                        <constraint firstItem="w9f-oc-saX" firstAttribute="leading" secondItem="3N0-15-XTW" secondAttribute="leading" id="7k2-20-zYa"/>
+                        <constraint firstAttribute="bottom" secondItem="w9f-oc-saX" secondAttribute="bottom" id="82W-R4-2A7"/>
+                        <constraint firstItem="pv3-NW-smb" firstAttribute="top" secondItem="3N0-15-XTW" secondAttribute="top" id="Iq4-vk-pQx"/>
+                        <constraint firstItem="pv3-NW-smb" firstAttribute="leading" secondItem="3N0-15-XTW" secondAttribute="leading" id="XBt-MG-K63"/>
+                        <constraint firstAttribute="width" constant="176" id="bEc-eA-odW"/>
+                        <constraint firstAttribute="trailing" secondItem="pv3-NW-smb" secondAttribute="trailing" id="bb3-jZ-AGB"/>
+                        <constraint firstAttribute="trailing" secondItem="w9f-oc-saX" secondAttribute="trailing" id="i2x-xA-KoT"/>
+                        <constraint firstAttribute="bottom" secondItem="pv3-NW-smb" secondAttribute="bottom" id="j6C-e4-WiR"/>
+                        <constraint firstItem="w9f-oc-saX" firstAttribute="top" secondItem="3N0-15-XTW" secondAttribute="top" id="kC7-ot-rir"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="IG0-lu-Mrc"/>
+            <constraints>
+                <constraint firstItem="ReS-bo-1HL" firstAttribute="leading" secondItem="9dO-sv-WNI" secondAttribute="leading" id="0OG-vi-y43"/>
+                <constraint firstItem="ReS-bo-1HL" firstAttribute="top" secondItem="9dO-sv-WNI" secondAttribute="top" id="CfE-VR-dCd"/>
+                <constraint firstAttribute="top" secondItem="3N0-15-XTW" secondAttribute="top" id="mWa-Zu-b2b"/>
+                <constraint firstAttribute="trailing" secondItem="3N0-15-XTW" secondAttribute="trailing" id="oWX-gn-CEq"/>
+                <constraint firstItem="IG0-lu-Mrc" firstAttribute="bottom" secondItem="ReS-bo-1HL" secondAttribute="bottom" id="zLv-OD-B5t"/>
+                <constraint firstAttribute="bottom" secondItem="3N0-15-XTW" secondAttribute="bottom" id="zr9-UU-FJg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="faceidView" destination="ReS-bo-1HL" id="baA-PB-wf5"/>
+                <outlet property="loginView" destination="3N0-15-XTW" id="YjH-sL-WsU"/>
+            </connections>
+            <point key="canvasLocation" x="202.89855072463769" y="94.419642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="faceid" width="300" height="300"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
